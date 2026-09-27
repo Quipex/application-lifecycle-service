@@ -1,0 +1,22 @@
+server:
+  address: 127.0.0.1
+
+spring:
+  datasource:
+    url: jdbc:h2:file:./data/application
+    username: sa
+    password: ""
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    open-in-view: false
+  flyway:
+    enabled: true
+
+applications:
+  listing:
+    default-page-size: 10
+
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
